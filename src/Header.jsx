@@ -56,8 +56,6 @@ const Header = () => {
       ]
     }
   ];
-
-  // Process items data
   const processItems = [
     { name: "Fixed Cost Project", icon: "ri-price-tag-3-line" },
     { name: "Talent On Demand", icon: "ri-team-line" },
@@ -72,8 +70,6 @@ const Header = () => {
   let serviceClick = () => {
     let dupToggle = !toggle;
     setToggle(dupToggle);
-    
-    // Close process menu when service opens
     if (dupToggle && toggle2) {
       setToggle2(false);
       process.current.style.borderBottom = "2px solid transparent";
@@ -99,8 +95,6 @@ const Header = () => {
   let processClick = () => {
     let dupli2Toggle = !toggle2;
     setToggle2(dupli2Toggle);
-    
-    // Close service menu when process opens
     if (dupli2Toggle && toggle) {
       setToggle(false);
       service.current.style.borderBottom = "2px solid transparent";
