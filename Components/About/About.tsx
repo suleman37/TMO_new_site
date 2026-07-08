@@ -3,21 +3,16 @@ export default function About() {
     <section id="about" className="s-about">
       <div className="row section-header has-bottom-sep" data-aos="fade-up">
         <div className="col-full">
-          <h3 className="subhead subhead--dark">Hello There</h3>
-          <h1 className="display-1 display-1--light">We Are Glint</h1>
+          <h3 className="subhead subhead--dark"></h3>
+          <h1 className="display-1 display-1--light">We Are Digital Innovators</h1>
         </div>
       </div>
     
       <div className="row about-desc" data-aos="fade-up">
         <div className="col-full">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt.
+          We help businesses transform ideas into powerful digital products through modern web development, mobile applications, AI solutions, and custom software. Our focus is on creating scalable, secure, and user-centered technology that delivers real business value.
+        
           </p>
         </div>
       </div>
@@ -27,20 +22,20 @@ export default function About() {
         data-aos="fade-up"
       >
         <div className="col-block stats__col ">
-          <div className="stats__count">127</div>
-          <h5>Awards Received</h5>
-        </div>
-        <div className="col-block stats__col">
-          <div className="stats__count">1505</div>
-          <h5>Cups of Coffee</h5>
-        </div>
-        <div className="col-block stats__col">
-          <div className="stats__count">109</div>
+          <div className="stats__count">50+</div>
           <h5>Projects Completed</h5>
         </div>
         <div className="col-block stats__col">
-          <div className="stats__count">102</div>
+          <div className="stats__count">50+</div>
           <h5>Happy Clients</h5>
+        </div>
+        <div className="col-block stats__col">
+          <div className="stats__count">25+</div>
+          <h5>Team Members</h5>
+        </div>
+        <div className="col-block stats__col">
+          <div className="stats__count">5+</div>
+          <h5>Years Experience</h5>
         </div>
       </div>
     

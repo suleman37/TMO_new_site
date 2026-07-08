@@ -167,12 +167,15 @@
 
                     stats.each(function () {
                         var $this = $(this);
+                        var raw = $this.text().trim();
+                        var target = parseInt(raw, 10) || 0;
+                        var suffix = raw.replace(/[\d.,\s]/g, "");
 
-                        $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+                        $({ Counter: 0 }).animate({ Counter: target }, {
                             duration: 4000,
                             easing: 'swing',
                             step: function (curValue) {
-                                $this.text(Math.ceil(curValue));
+                                $this.text(Math.ceil(curValue) + suffix);
                             }
                         });
                     });

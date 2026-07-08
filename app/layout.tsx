@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html className="no-js" lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="stylesheet" href="/css/base.css" />
         <link rel="stylesheet" href="/css/vendor.css" />
