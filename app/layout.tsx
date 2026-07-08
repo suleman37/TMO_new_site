@@ -23,13 +23,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="stylesheet" href="/css/base.css" />
         <link rel="stylesheet" href="/css/vendor.css" />
         <link rel="stylesheet" href="/css/main.css" />
-
-        {/*
-          modernizr + pace are loaded after hydration (see Scripts.tsx).
-          Loading them beforeInteractive injects DOM nodes / mutates <html>,
-          which causes "Hydration failed" because the server HTML no longer
-          matches what React sees on the client.
-        */}
       </head>
       <body id="top" suppressHydrationWarning>
         {children}

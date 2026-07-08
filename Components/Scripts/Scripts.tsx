@@ -13,13 +13,6 @@ function getJQuery(): JQueryFn | undefined {
   return (window as unknown as { jQuery?: JQueryFn }).jQuery;
 }
 
-/**
- * Loads the template's jQuery stack in strict order:
- * jQuery -> plugins (includes Parallax auto-init) -> main.js
- *
- * Hero background depends on Parallax.js reading data-image-src on #home.
- * Scripts must not run in parallel — plugins.js requires jQuery first.
- */
 export default function Scripts() {
   const [jqueryReady, setJqueryReady] = useState(false);
   const [pluginsReady, setPluginsReady] = useState(false);
@@ -28,7 +21,6 @@ export default function Scripts() {
     const jq = getJQuery();
     if (!jq) return;
 
-    // Re-init parallax in case plugins.js loaded after document.ready fired.
     jq('[data-parallax="scroll"]').parallax?.();
 
     if (document.readyState === "complete") {
@@ -41,14 +33,8 @@ export default function Scripts() {
 
   return (
     <>
-      <Script
-        src="/js/modernizr.js"
-        strategy="afterInteractive"
-      />
-      <Script
-        src="/js/pace.min.js"
-        strategy="afterInteractive"
-      />
+      <Script src="/js/modernizr.js" strategy="afterInteractive" />
+      <Script src="/js/pace.min.js" strategy="afterInteractive" />
       <Script
         src="/js/jquery-3.2.1.min.js"
         strategy="afterInteractive"
