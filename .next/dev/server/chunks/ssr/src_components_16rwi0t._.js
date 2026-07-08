@@ -219,7 +219,7 @@ const Header = ()=>{
         setToggle(dupToggle);
         if (dupToggle && toggle2) {
             setToggle2(false);
-            process.current.style.borderBottom = "2px solid transparent";
+            processTab.current.style.borderBottom = "2px solid transparent";
             proItems.current.style.height = "0px";
             proItems.current.style.paddingBottom = "0px";
         }
@@ -246,11 +246,11 @@ const Header = ()=>{
             outerDiv.current.style.height = "0px";
         }
         if (dupli2Toggle) {
-            process.current.style.borderBottom = "2px solid #FFB600";
+            processTab.current.style.borderBottom = "2px solid #FFB600";
             proItems.current.style.height = "fit-content";
             proItems.current.style.paddingBottom = "5px";
         } else {
-            process.current.style.borderBottom = "2px solid transparent";
+            processTab.current.style.borderBottom = "2px solid transparent";
             proItems.current.style.height = "0px";
             proItems.current.style.paddingBottom = "0px";
         }
@@ -739,7 +739,7 @@ const Header = ()=>{
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 className: "text-[1rem] border-b-[2px] sm:text-[1.2rem] border-transparent hover:border-[#FCB714]  p-2 rounded-md transition-all duration-200",
-                                ref: process,
+                                ref: processTab,
                                 onClick: processClick,
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
