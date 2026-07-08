@@ -22,7 +22,7 @@ export default function About() {
         <div className="w-full px-8 lg:px-20 text-center mt-8">
           <h1 className="text-[1.8rem] leading-none font-semibold">Provider of full-cycle software development services</h1>
           <p className="text-md mt-4">
-            To give a high standard of service to our clients, we've established
+            To give a high standard of service to our clients, we&apos;ve established
             a robust team of software engineers, designers, quality assurance
             professionals, and project managers.
           </p>
@@ -58,7 +58,7 @@ export default function About() {
             <p className="text-[0.95rem]">Working with The Team Freelance has had a long-term positive influence on our capacity to innovate and execute quickly. There is a great focus on not simply doing what you ask for by the personnel there.</p>
 
               <button className='group cursor-pointer relative z-[0]  mt-4 w-fit px-4 py-3 uppercase text-white text-md overflow-hidden before:content-[""] before:absolute before:h-full before:w-[55%] before:top-0 before:left-0 before:bg-[#01345B] before:z-[-1] before:transition-all before:duration-300 hover:before:w-[100%]'>
-                <span className="relative z-[2]">let's</span>
+                <span className="relative z-[2]">let&apos;s</span>
                 <span className="relative z-10 ml-1 group-hover:text-white text-black transition-colors duration-300">
                   talk
                 </span>

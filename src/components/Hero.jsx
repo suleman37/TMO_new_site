@@ -66,7 +66,7 @@ const Hero = () => {
                     </div>
                     <div className="head-para">
                         <h1 className="font-semibold tracking-wide text-[7.5vw] sm:text-[2.2rem] sm:leading-10 lg:text-[2.2rem] xl:text-[2.45rem]">
-                            The World's Leading Provider of Digital Transformation Solutions
+                            The World&apos;s Leading Provider of Digital Transformation Solutions
                         </h1>
                         <p className="text-white text-[4.5vw] sm:text-[1.2rem] leading-6 lg:text-[1.2rem] xl:text-[1.4rem] mt-4">
                             We,The Team Freelance, are web, mobile, and enterprise development

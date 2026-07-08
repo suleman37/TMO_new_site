@@ -12,7 +12,7 @@ const CardPage = () => {
     <div className='mt-30 max-w-[1600px] mx-auto'>
       <div className='text-center flex flex-col items-center gap-3 '>
         <h3 className='uppercase  text-md md:text-2xl md:font-semibold lg:text-3xl'>Industries we Serve</h3>
-        <p className='uppercase  text-md w-[80%] md:w-[40rem]'>We've had the pleasure of working with a variety of sectors, addressing key challenges and delighting end customers with our engaging mobile apps.</p>
+        <p className='uppercase  text-md w-[80%] md:w-[40rem]'>We&apos;ve had the pleasure of working with a variety of sectors, addressing key challenges and delighting end customers with our engaging mobile apps.</p>
       </div>
       <div className='grid gap-3 justify-center md:grid-cols-2 lg:grid-cols-3 lg:px-10 mt-12'>
         <Card icon={card1} head='Health Care' para='Schedule daily workout, check fitness, and provide immediate patient care solutions with digital healthcare services' />

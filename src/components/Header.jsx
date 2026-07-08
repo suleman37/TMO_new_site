@@ -74,7 +74,7 @@ const Header = () => {
     setToggle(dupToggle);
     if (dupToggle && toggle2) {
       setToggle2(false);
-      process.current.style.borderBottom = "2px solid transparent";
+      processTab.current.style.borderBottom = "2px solid transparent";
       proItems.current.style.height = "0px";
       proItems.current.style.paddingBottom = "0px";
     }
@@ -91,7 +91,7 @@ const Header = () => {
   };
 
   let [toggle2, setToggle2] = useState(false);
-  let process = useRef();
+  let processTab = useRef();
   let proItems = useRef();
 
   let processClick = () => {
@@ -105,11 +105,11 @@ const Header = () => {
     }
 
     if (dupli2Toggle) {
-      process.current.style.borderBottom = "2px solid #FFB600";
+      processTab.current.style.borderBottom = "2px solid #FFB600";
       proItems.current.style.height = "fit-content";
       proItems.current.style.paddingBottom = "5px";
     } else {
-      process.current.style.borderBottom = "2px solid transparent";
+      processTab.current.style.borderBottom = "2px solid transparent";
       proItems.current.style.height = "0px";
       proItems.current.style.paddingBottom = "0px";
     }
@@ -325,7 +325,7 @@ const Header = () => {
 
             <li
               className="text-[1rem] border-b-[2px] sm:text-[1.2rem] border-transparent hover:border-[#FCB714]  p-2 rounded-md transition-all duration-200"
-              ref={process}
+              ref={processTab}
               onClick={processClick}
             >
               <span className="cursor-pointer">
