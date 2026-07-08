@@ -1,54 +1,56 @@
+"use client";
+
 import React, { useState } from "react";
 import DevItems from "./DevItems";
 // Mobile icons
-import mob1 from "../../assets/mob1.png";
-import mob2 from "../../assets/mob2.png";
-import mob3 from "../../assets/mob3.png";
-import mob4 from "../../assets/mob4.png";
-import mob5 from "../../assets/mob5.png";
-import mob6 from "../../assets/mob6.png";
-import mob7 from "../../assets/mob7.png";
-import mob8 from "../../assets/mob8.png";
-import mob9 from "../../assets/mob9.png";
-import mob10 from "../../assets/mob10.png";
-import mob11 from "../../assets/mob11.png";
+const mob1 = "/assets/mob1.png";
+const mob2 = "/assets/mob2.png";
+const mob3 = "/assets/mob3.png";
+const mob4 = "/assets/mob4.png";
+const mob5 = "/assets/mob5.png";
+const mob6 = "/assets/mob6.png";
+const mob7 = "/assets/mob7.png";
+const mob8 = "/assets/mob8.png";
+const mob9 = "/assets/mob9.png";
+const mob10 = "/assets/mob10.png";
+const mob11 = "/assets/mob11.png";
 // front end icons
-import front1 from "../../assets/front1.png";
-import front2 from "../../assets/front2.png";
-import front3 from "../../assets/front3.png";
-import front4 from "../../assets/front4.png";
-import front5 from "../../assets/front5.png";
-import front6 from "../../assets/front6.png";
+const front1 = "/assets/front1.png";
+const front2 = "/assets/front2.png";
+const front3 = "/assets/front3.png";
+const front4 = "/assets/front4.png";
+const front5 = "/assets/front5.png";
+const front6 = "/assets/front6.png";
 // Database icons
-import data1 from "../../assets/data1.png";
-import data2 from "../../assets/data2.png";
-import data3 from "../../assets/data3.png";
-import data4 from "../../assets/data4.png";
-import data5 from "../../assets/data5.png";
-import data6 from "../../assets/data6.png";
-import data7 from "../../assets/data7.png";
-import data8 from "../../assets/data8.png";
-import data9 from "../../assets/data9.png";
-import data10 from "../../assets/data10.png";
+const data1 = "/assets/data1.png";
+const data2 = "/assets/data2.png";
+const data3 = "/assets/data3.png";
+const data4 = "/assets/data4.png";
+const data5 = "/assets/data5.png";
+const data6 = "/assets/data6.png";
+const data7 = "/assets/data7.png";
+const data8 = "/assets/data8.png";
+const data9 = "/assets/data9.png";
+const data10 = "/assets/data10.png";
 // Backend Icons
-import back from "../../assets/back.png";
-import back1 from "../../assets/back1.png";
-import back2 from "../../assets/back2.png";
-import back4 from "../../assets/back4.png";
-import back5 from "../../assets/back5.png";
-import back6 from "../../assets/back6.png";
+const back = "/assets/back.png";
+const back1 = "/assets/back1.png";
+const back2 = "/assets/back2.png";
+const back4 = "/assets/back4.png";
+const back5 = "/assets/back5.png";
+const back6 = "/assets/back6.png";
 // CMS icons
-import cms1 from "../../assets/cms1.png";
-import cms2 from "../../assets/cms2.png";
-import cms3 from "../../assets/cms3.png";
-import cms4 from "../../assets/cms4.png";
-import cms5 from "../../assets/cms5.png";
+const cms1 = "/assets/cms1.png";
+const cms2 = "/assets/cms2.png";
+const cms3 = "/assets/cms3.png";
+const cms4 = "/assets/cms4.png";
+const cms5 = "/assets/cms5.png";
 // DevOps Icons
-import ops1 from "../../assets/ops1.png";
-import ops2 from "../../assets/ops2.png";
-import ops3 from "../../assets/ops3.png";
-import ops4 from "../../assets/ops4.png";
-import ops5 from "../../assets/ops5.png";
+const ops1 = "/assets/ops1.png";
+const ops2 = "/assets/ops2.png";
+const ops3 = "/assets/ops3.png";
+const ops4 = "/assets/ops4.png";
+const ops5 = "/assets/ops5.png";
 const Dev = () => {
   const [activeTab, setActiveTab] = useState("Mobile");
   return (

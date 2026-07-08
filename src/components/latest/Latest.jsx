@@ -1,9 +1,10 @@
 import React from 'react'
-import latest from '../../assets/latest-main.jpg'
-import latest1 from '../../assets/latest1.jpg'
-import latest2 from '../../assets/latest2.jpg'
-import latest3 from '../../assets/latest3.jpg'
-import LatestItems from './LatestItems' 
+import LatestItems from './LatestItems'
+
+const latest = '/assets/latest-main.jpg'
+const latest1 = '/assets/latest1.jpg'
+const latest2 = '/assets/latest2.jpg'
+const latest3 = '/assets/latest3.jpg'
 const Latest = () => {
   return (
     <div className='px-3 mt-20 max-w-[1600px] mx-auto'>

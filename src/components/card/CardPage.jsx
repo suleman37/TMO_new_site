@@ -1,11 +1,12 @@
 import React from 'react'
 import Card from './Card'
-import card1 from '../../assets/card1.png'
-import card2 from '../../assets/card2.png'
-import card3 from '../../assets/card3.png'
-import card4 from '../../assets/card4.png'
-import card5 from '../../assets/card5.png'
-import card6 from '../../assets/card6.png'
+
+const card1 = '/assets/card1.png'
+const card2 = '/assets/card2.png'
+const card3 = '/assets/card3.png'
+const card4 = '/assets/card4.png'
+const card5 = '/assets/card5.png'
+const card6 = '/assets/card6.png'
 const CardPage = () => {
   return (
     <div className='mt-30 max-w-[1600px] mx-auto'>

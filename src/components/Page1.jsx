@@ -1,9 +1,12 @@
+"use client";
+
 import React, { useState } from 'react'
 import Page1Content from './Page1Content'
 import Page1Slider from './Page1Slider'
-import slide1 from '../assets/slide1.svg'
-import slide2 from '../assets/slide2.svg'
-import slide3 from '../assets/slide3.svg'
+
+const slide1 = '/assets/slide1.svg'
+const slide2 = '/assets/slide2.svg'
+const slide3 = '/assets/slide3.svg'
 
 const Page1 = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

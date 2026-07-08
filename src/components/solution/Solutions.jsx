@@ -1,11 +1,12 @@
 import React from 'react'
 import SoluCards from './SoluCards'
-import dev1 from '../../assets/dev1.png'
-import dev2 from '../../assets/dev2.png'
-import dev3 from '../../assets/dev3.png'
-import dev4 from '../../assets/dev4.png'
-import dev5 from '../../assets/dev5.png'
-import dev6 from '../../assets/dev6.png'
+
+const dev1 = '/assets/dev1.png'
+const dev2 = '/assets/dev2.png'
+const dev3 = '/assets/dev3.png'
+const dev4 = '/assets/dev4.png'
+const dev5 = '/assets/dev5.png'
+const dev6 = '/assets/dev6.png'
 const Solutions = () => {
   return (
     <div className='mt-10 px-2 max-w-[1600px] mx-auto'>
