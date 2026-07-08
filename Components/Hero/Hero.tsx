@@ -1,4 +1,10 @@
+"use client";
+
+import { useHeroParallax } from "@/Components/Hero/useHeroParallax";
+
 export default function Hero() {
+  useHeroParallax();
+
   return (
     <section
       id="home"
@@ -8,21 +14,22 @@ export default function Hero() {
       data-natural-width={3000}
       data-natural-height={2000}
       data-position-y="center"
+      data-speed="0.35"
     >
       <div className="overlay" />
       <div className="shadow-overlay" />
-    
+
       <div className="home-content">
         <div className="row home-content__main">
           <h3>Welcome to TechMasters</h3>
-    
+
           <h1>
             We are a creative group <br />
             of people who design <br />
             influential brands and <br />
             digital experiences.
           </h1>
-    
+
           <div className="home-content__buttons">
             <a href="#contact" className="smoothscroll btn btn--stroke">
               Start a Project
@@ -32,16 +39,16 @@ export default function Hero() {
             </a>
           </div>
         </div>
-    
+
         <div className="home-content__scroll">
           <a href="#about" className="scroll-link smoothscroll">
             <span>Scroll Down</span>
           </a>
         </div>
-    
+
         <div className="home-content__line" />
       </div>
-    
+
       <ul className="home-social">
         <li>
           <a href="#0">

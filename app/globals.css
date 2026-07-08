@@ -1,12 +1,34 @@
 /*
- * Hero fallback: the original template sets the background via Parallax.js
- * (data-parallax / data-image-src), not CSS. If the plugin fails to init in
- * Next.js, the section would appear as a plain black overlay. This ensures the
- * image is always visible; Parallax.js still adds the scroll effect when it loads.
+ * Hero fallback: visible before Parallax.js initializes.
+ * Once parallax loads, the mirror element handles the background.
  */
 .s-home {
   background-image: url("/images/hero-software-house.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+html.parallax-ready .s-home {
+  background-image: none;
+}
+
+.parallax-mirror {
+  z-index: 0 !important;
+}
+
+.s-home {
+  position: relative;
+  z-index: 1;
+}
+
+.s-home .overlay,
+.s-home .shadow-overlay {
+  z-index: 1;
+}
+
+.s-home .home-content,
+.s-home .home-social {
+  position: relative;
+  z-index: 2;
 }

@@ -6,8 +6,13 @@ import { useCallback, useState } from "react";
 type JQueryFn = (selector: string) => {
   fadeOut: (speed: string, cb?: () => void) => { delay: (ms: number) => { fadeOut: (speed: string) => void } };
   removeClass: (cls: string) => { addClass: (cls: string) => void };
-  parallax?: (options?: object) => void;
 };
+
+declare global {
+  interface JQuery {
+    parallax?: (options?: object | string) => JQuery;
+  }
+}
 
 function getJQuery(): JQueryFn | undefined {
   return (window as unknown as { jQuery?: JQueryFn }).jQuery;
@@ -20,8 +25,6 @@ export default function Scripts() {
   const finishInit = useCallback(() => {
     const jq = getJQuery();
     if (!jq) return;
-
-    jq('[data-parallax="scroll"]').parallax?.();
 
     if (document.readyState === "complete") {
       jq("#loader").fadeOut("slow", () => {
