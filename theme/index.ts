@@ -1,1 +1,1 @@
-export { colors, gradientClasses } from "./colors";
+export { colors } from "./colors";

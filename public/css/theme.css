@@ -1,0 +1,460 @@
+/*
+ * TMO theme — two-color palette
+ * Primary: #07121a  |  Secondary: off-white #f5f4ef
+ */
+
+:root {
+  --color-primary: #07121a;
+  --color-off-white: #f5f4ef;
+  --color-primary-80: rgba(7, 18, 26, 0.8);
+  --color-primary-60: rgba(7, 18, 26, 0.6);
+  --color-primary-40: rgba(7, 18, 26, 0.4);
+  --color-primary-20: rgba(7, 18, 26, 0.2);
+  --color-off-white-80: rgba(245, 244, 239, 0.8);
+  --color-off-white-60: rgba(245, 244, 239, 0.6);
+  --color-off-white-40: rgba(245, 244, 239, 0.4);
+  --color-off-white-25: rgba(245, 244, 239, 0.25);
+  --color-off-white-15: rgba(245, 244, 239, 0.15);
+}
+
+/* ------------------------------------------------------------------
+ * Base
+ * ------------------------------------------------------------------ */
+body {
+  background: var(--color-primary) !important;
+  color: var(--color-off-white-60) !important;
+}
+
+a,
+a:visited {
+  color: var(--color-off-white);
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--color-off-white-80);
+}
+
+/* ------------------------------------------------------------------
+ * Typography & headings
+ * ------------------------------------------------------------------ */
+.display-1,
+.display-2,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-primary);
+}
+
+.display-1--light,
+.display-2--light,
+.subhead--dark {
+  color: var(--color-off-white) !important;
+}
+
+.subhead {
+  color: var(--color-primary) !important;
+}
+
+.s-about .subhead,
+.s-works .subhead,
+.s-contact .subhead {
+  color: var(--color-off-white-60) !important;
+}
+
+.section-header.has-bottom-sep::before {
+  background-color: var(--color-primary-20) !important;
+}
+
+.s-about .section-header.has-bottom-sep::before,
+.s-works .section-header.has-bottom-sep::before,
+.s-works .light-sep::before {
+  background-color: var(--color-off-white-25) !important;
+}
+
+/* ------------------------------------------------------------------
+ * Buttons
+ * ------------------------------------------------------------------ */
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  background-color: var(--color-off-white-40) !important;
+  border-color: var(--color-off-white-40) !important;
+  color: var(--color-primary) !important;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: var(--color-off-white) !important;
+  border-color: var(--color-off-white) !important;
+  color: var(--color-primary) !important;
+}
+
+.btn.btn--primary,
+button.btn--primary,
+input[type="submit"].btn--primary {
+  background: var(--color-off-white) !important;
+  border-color: var(--color-off-white) !important;
+  color: var(--color-primary) !important;
+}
+
+.btn.btn--primary:hover,
+button.btn--primary:hover,
+input[type="submit"].btn--primary:hover,
+.btn.btn--primary:focus,
+button.btn--primary:focus,
+input[type="submit"].btn--primary:focus {
+  background: var(--color-off-white-80) !important;
+  border-color: var(--color-off-white-80) !important;
+}
+
+.btn--stroke,
+button.btn--stroke {
+  background: transparent !important;
+  border-color: var(--color-off-white) !important;
+  color: var(--color-off-white) !important;
+}
+
+.btn--stroke:hover,
+button.btn--stroke:hover {
+  background: var(--color-off-white) !important;
+  border-color: var(--color-off-white) !important;
+  color: var(--color-primary) !important;
+}
+
+/* ------------------------------------------------------------------
+ * Header
+ * ------------------------------------------------------------------ */
+.header-nav {
+  background: var(--color-primary) !important;
+  color: var(--color-off-white-40) !important;
+}
+
+.header-nav h3 {
+  color: var(--color-off-white) !important;
+}
+
+.header-nav a,
+.header-nav a:visited {
+  color: var(--color-off-white-60) !important;
+}
+
+.header-nav a:hover,
+.header-nav a:focus,
+.header-nav a:active {
+  color: var(--color-off-white) !important;
+}
+
+.header-nav__list a,
+.header-nav__list a:visited {
+  color: var(--color-off-white) !important;
+}
+
+.header-menu-toggle {
+  color: var(--color-off-white) !important;
+}
+
+.header-menu-toggle.opaque,
+.header-menu-toggle.opaque .header-menu-text {
+  background-color: var(--color-primary) !important;
+}
+
+.header-menu-icon,
+.header-menu-icon::before,
+.header-menu-icon::after,
+.header-nav__close span::before,
+.header-nav__close span::after {
+  background-color: var(--color-off-white) !important;
+}
+
+/* ------------------------------------------------------------------
+ * Hero
+ * ------------------------------------------------------------------ */
+.s-home .overlay {
+  background-color: var(--color-primary) !important;
+}
+
+.s-home .shadow-overlay {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    var(--color-primary-80) 100%
+  ) !important;
+}
+
+.no-js .s-home {
+  background-color: var(--color-primary) !important;
+}
+
+.home-content h3 {
+  color: var(--color-off-white-60) !important;
+}
+
+.home-content h1 {
+  color: var(--color-off-white) !important;
+}
+
+.home-content__buttons .btn {
+  border-color: var(--color-off-white) !important;
+  color: var(--color-off-white) !important;
+}
+
+.home-content__buttons .btn:hover,
+.home-content__buttons .btn:focus {
+  background: var(--color-off-white) !important;
+  color: var(--color-primary) !important;
+}
+
+.home-content__scroll a,
+.home-social a {
+  color: var(--color-off-white-60) !important;
+}
+
+.home-social a:hover,
+.home-social a:focus {
+  color: var(--color-off-white) !important;
+}
+
+/* ------------------------------------------------------------------
+ * About
+ * ------------------------------------------------------------------ */
+.s-about {
+  background-color: var(--color-primary) !important;
+  color: var(--color-off-white-80) !important;
+}
+
+.s-about .display-1,
+.s-about .display-1--light {
+  color: var(--color-off-white) !important;
+}
+
+.stats__count {
+  color: var(--color-off-white) !important;
+}
+
+.stats h5 {
+  color: var(--color-off-white-60) !important;
+}
+
+.stats__col {
+  border-right-color: var(--color-off-white-25) !important;
+}
+
+.about__line {
+  background-color: var(--color-off-white) !important;
+}
+
+/* ------------------------------------------------------------------
+ * Services
+ * ------------------------------------------------------------------ */
+.s-services {
+  background-color: var(--color-off-white) !important;
+  color: var(--color-primary-60) !important;
+}
+
+.s-services .display-2,
+.s-services h3,
+.s-services .h2 {
+  color: var(--color-primary) !important;
+}
+
+.services-list .service-icon {
+  color: var(--color-primary) !important;
+}
+
+/* ------------------------------------------------------------------
+ * Works
+ * ------------------------------------------------------------------ */
+.s-works {
+  background: var(--color-off-white) !important;
+}
+
+.s-works .intro-wrap {
+  background: var(--color-primary) !important;
+}
+
+.s-works .display-2--light {
+  color: var(--color-off-white) !important;
+}
+
+.item-folio__thumb a::before {
+  background-color: var(--color-primary-80) !important;
+}
+
+.item-folio__thumb a::after,
+.item-folio__title {
+  color: var(--color-off-white) !important;
+}
+
+.item-folio__cat {
+  color: var(--color-off-white-60) !important;
+}
+
+.item-folio__project-link {
+  background-color: var(--color-off-white) !important;
+  color: var(--color-primary) !important;
+}
+
+/* ------------------------------------------------------------------
+ * Clients
+ * ------------------------------------------------------------------ */
+.s-clients {
+  background-color: var(--color-off-white) !important;
+  color: var(--color-primary-60) !important;
+}
+
+.s-clients .display-2 {
+  color: var(--color-primary) !important;
+}
+
+.clients-testimonials::before {
+  background-color: var(--color-primary-20) !important;
+}
+
+.clients-testimonials .testimonials p {
+  color: var(--color-primary-60) !important;
+}
+
+.clients-testimonials .testimonials__name {
+  color: var(--color-primary) !important;
+}
+
+.clients-testimonials .testimonials__pos {
+  color: var(--color-primary-40) !important;
+}
+
+.slick-slider .slick-dots li button {
+  background: var(--color-primary-40) !important;
+}
+
+.slick-slider .slick-dots li.slick-active button,
+.slick-slider .slick-dots li:hover button {
+  background: var(--color-primary) !important;
+}
+
+/* ------------------------------------------------------------------
+ * Contact
+ * ------------------------------------------------------------------ */
+.s-contact {
+  background-color: var(--color-primary) !important;
+  color: var(--color-off-white-60) !important;
+}
+
+.s-contact .overlay {
+  background-color: var(--color-primary) !important;
+}
+
+.s-contact .display-2--light,
+.s-contact h3,
+.contact-content h3 {
+  color: var(--color-off-white) !important;
+}
+
+.s-contact .form-field label {
+  background: var(--color-off-white) !important;
+  color: var(--color-primary) !important;
+}
+
+.s-contact .form-field label::after {
+  border-right-color: var(--color-off-white) !important;
+}
+
+.contact__line {
+  background-color: var(--color-off-white) !important;
+}
+
+.contact-content {
+  background-color: var(--color-primary-40) !important;
+  color: var(--color-off-white-60) !important;
+}
+
+.contact-content h5 {
+  color: var(--color-off-white) !important;
+}
+
+.contact-content input,
+.contact-content textarea,
+.contact-content select {
+  color: var(--color-off-white-80) !important;
+  border-bottom-color: var(--color-off-white-15) !important;
+}
+
+.contact-content input:focus,
+.contact-content textarea:focus {
+  border-bottom-color: var(--color-off-white) !important;
+  color: var(--color-off-white) !important;
+}
+
+.contact-social a {
+  color: var(--color-off-white-40) !important;
+}
+
+.contact-social a:hover {
+  color: var(--color-off-white) !important;
+}
+
+/* ------------------------------------------------------------------
+ * Footer
+ * ------------------------------------------------------------------ */
+footer {
+  background-color: var(--color-primary) !important;
+  color: var(--color-off-white-40) !important;
+}
+
+footer h4,
+footer a {
+  color: var(--color-off-white) !important;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+  color: var(--color-off-white-80) !important;
+}
+
+.footer-subscribe #mc-form input[type="email"] {
+  color: var(--color-off-white-60) !important;
+  background: var(--color-primary-40) url(../images/email-icon.png) 20px center no-repeat !important;
+}
+
+.footer-subscribe #mc-form input[type="email"]:focus {
+  color: var(--color-off-white) !important;
+}
+
+.footer-bottom {
+  border-top-color: var(--color-off-white-15) !important;
+}
+
+.go-top a {
+  color: var(--color-off-white) !important;
+}
+
+/* ------------------------------------------------------------------
+ * Forms & misc accents (replace green #39b54a)
+ * ------------------------------------------------------------------ */
+.highlight,
+label:focus,
+legend,
+.drop-cap,
+.pull-quote blockquote:before {
+  color: var(--color-primary) !important;
+}
+
+.s-contact .highlight,
+.s-about .highlight {
+  color: var(--color-off-white) !important;
+}

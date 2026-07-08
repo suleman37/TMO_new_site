@@ -23,6 +23,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="stylesheet" href="/css/base.css" />
         <link rel="stylesheet" href="/css/vendor.css" />
         <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="/css/theme.css" />
       </head>
       <body id="top" suppressHydrationWarning>
         {children}
