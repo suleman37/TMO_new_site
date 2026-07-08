@@ -4,7 +4,7 @@ export default function Hero() {
       id="home"
       className="s-home target-section"
       data-parallax="scroll"
-      data-image-src="/images/hero-bg.jpg"
+      data-image-src="/images/hero-software-house.jpg"
       data-natural-width={3000}
       data-natural-height={2000}
       data-position-y="center"
@@ -14,7 +14,7 @@ export default function Hero() {
     
       <div className="home-content">
         <div className="row home-content__main">
-          <h3>Welcome to Glint</h3>
+          <h3>Welcome to TechMasters</h3>
     
           <h1>
             We are a creative group <br />

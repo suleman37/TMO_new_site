@@ -5,7 +5,7 @@
  * image is always visible; Parallax.js still adds the scroll effect when it loads.
  */
 .s-home {
-  background-image: url("/images/hero-bg.jpg");
+  background-image: url("/images/hero-software-house.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
