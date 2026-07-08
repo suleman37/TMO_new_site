@@ -5,7 +5,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 export const metadata = {
   title: "Team Freelance",
   icons: {
-    icon: "/vite.svg",
+    icon: "/assets/favicon-0730531d.ico",
   },
 };
 
