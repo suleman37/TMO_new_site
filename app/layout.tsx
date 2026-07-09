@@ -3,8 +3,8 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Glint",
-  description: "Glint - a modern and stylish digital agency template.",
+  title: "TechMasters",
+  description: "TechMaster - innovative web and app development solutions.",
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
