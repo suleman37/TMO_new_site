@@ -8,6 +8,10 @@ const nextConfig = {
   reactStrictMode: true,
   // Pin the tracing root to this project (multiple lockfiles exist on the machine).
   outputFileTracingRoot: __dirname,
+  // Tell Turbopack the project root explicitly — needed when the path contains spaces.
+  turbopack: {
+    root: __dirname,
+  },
 };
 
 export default nextConfig;
