@@ -5,7 +5,7 @@ export default function Clients() {
         <div className="col-full">
           <h3 className="subhead">Our Clients</h3>
           <h1 className="display-2">
-            Glint has been honored to partner up with these clients
+            We has been honored to partner up with these clients
           </h1>
         </div>
       </div>
@@ -15,35 +15,35 @@ export default function Clients() {
           <div className="clients">
             <a href="#0" title="" className="clients__slide">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/clients/apple.png" alt="" />
+              <img src="/images/clients/client1-e01d34c5.png" alt="Client 1" />
             </a>
             <a href="#0" title="" className="clients__slide">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/clients/atom.png" alt="" />
+              <img src="/images/clients/client2-df53a914.png" alt="Client 2" />
             </a>
             <a href="#0" title="" className="clients__slide">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/clients/blackberry.png" alt="" />
+              <img src="/images/clients/client3-3bd3fb14.png" alt="Client 3" />
             </a>
             <a href="#0" title="" className="clients__slide">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/clients/dropbox.png" alt="" />
+              <img src="/images/clients/client4-707cc1fc.png" alt="Client 4" />
             </a>
             <a href="#0" title="" className="clients__slide">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/clients/envato.png" alt="" />
+              <img src="/images/clients/client5-b572a63d.png" alt="Client 5" />
             </a>
             <a href="#0" title="" className="clients__slide">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/clients/firefox.png" alt="" />
+              <img src="/images/clients/client6-73def9a2.png" alt="Client 6" />
             </a>
             <a href="#0" title="" className="clients__slide">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/clients/joomla.png" alt="" />
+              <img src="/images/clients/client7-fbce2808.png" alt="Client 7" />
             </a>
             <a href="#0" title="" className="clients__slide">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/images/clients/magento.png" alt="" />
+              <img src="/images/clients/client8-fb8f4c1b.png" alt="Client 8" />
             </a>
           </div>
         </div>
@@ -54,64 +54,64 @@ export default function Clients() {
           <div className="testimonials">
             <div className="testimonials__slide">
               <p>
-                Qui ipsam temporibus quisquam vel. Maiores eos cumque distinctio
-                nam accusantium ipsum. Laudantium quia consequatur molestias
-                delectus culpa facere hic dolores aperiam. Accusantium quos qui
-                praesentium corpori. Excepturi nam cupiditate culpa doloremque
-                deleniti repellat.
+                The AI integration Tech Master Official implemented increased our
+                customer satisfaction rates by 45%. Truly impressive work!
               </p>
     
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/avatars/user-01.jpg"
-                alt="Author image"
+                alt="Adam Jonathan"
                 className="testimonials__avatar"
               />
               <div className="testimonials__info">
-                <span className="testimonials__name">Tim Cook</span>
-                <span className="testimonials__pos">CEO, Apple</span>
+                <span className="testimonials__name">Adam Jonathan</span>
+                <span className="testimonials__pos">
+                  Marketing Director, veekrypt
+                </span>
               </div>
             </div>
     
             <div className="testimonials__slide">
               <p>
-                Excepturi nam cupiditate culpa doloremque deleniti repellat.
-                Veniam quos repellat voluptas animi adipisci. Nisi eaque
-                consequatur. Quasi voluptas eius distinctio. Atque eos maxime.
-                Qui ipsam temporibus quisquam vel.
-              </p>
-    
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/images/avatars/user-05.jpg"
-                alt="Author image"
-                className="testimonials__avatar"
-              />
-              <div className="testimonials__info">
-                <span className="testimonials__name">Sundar Pichai</span>
-                <span className="testimonials__pos">CEO, Google</span>
-              </div>
-            </div>
-    
-            <div className="testimonials__slide">
-              <p>
-                Repellat dignissimos libero. Qui sed at corrupti expedita
-                voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                Autem eaque officia cum exercitationem sunt voluptatum accusamus.
-                Quasi voluptas eius distinctio.
+                Their team&apos;s expertise in cloud solutions has streamlined
+                our operations and significantly reduced costs.
               </p>
     
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/avatars/user-02.jpg"
-                alt="Author image"
+                alt="David Wilson"
                 className="testimonials__avatar"
               />
               <div className="testimonials__info">
-                <span className="testimonials__name">Satya Nadella</span>
-                <span className="testimonials__pos">CEO, Microsoft</span>
+                <span className="testimonials__name">David Wilson</span>
+                <span className="testimonials__pos">CTO, CloudNine</span>
               </div>
             </div>
+    
+            <div className="testimonials__slide">
+              <p>
+                We are thrilled with the custom software they developed. It
+                perfectly meets our unique business needs and is very
+                user-friendly.
+              </p>
+    
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/avatars/user-03.jpg"
+                alt="Jessica Lee"
+                className="testimonials__avatar"
+              />
+              <div className="testimonials__info">
+                <span className="testimonials__name">Jessica Lee</span>
+                <span className="testimonials__pos">
+                  Operations Manager, ProCorp
+                </span>
+              </div>
+            </div>
+    
+           
           </div>
         </div>
       </div>

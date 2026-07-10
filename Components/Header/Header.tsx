@@ -1,10 +1,51 @@
 export default function Header() {
   return (
     <header className="s-header">
-      <div className="header-logo">
-        <a className="site-logo" href="/">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/logo.png" alt="Homepage" />
+      <div className="header-topbar">
+        <div className="header-logo">
+          <a className="site-logo" href="/">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/logo.png" alt="Homepage" />
+          </a>
+        </div>
+
+        <nav className="header-desktop-nav" aria-label="Desktop navigation">
+          <ul>
+            <li>
+              <a className="smoothscroll" href="#home" title="home">
+                Home
+              </a>
+            </li>
+            <li>
+              <a className="smoothscroll" href="#about" title="about">
+                About
+              </a>
+            </li>
+            <li>
+              <a className="smoothscroll" href="#services" title="services">
+                Services
+              </a>
+            </li>
+            <li>
+              <a className="smoothscroll" href="#works" title="works">
+                Works
+              </a>
+            </li>
+            <li>
+              <a className="smoothscroll" href="#clients" title="clients">
+                Clients
+              </a>
+            </li>
+            <li>
+              <a className="smoothscroll" href="#contact" title="contact">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <a className="header-book-call" href="#contact">
+          Book a Call
         </a>
       </div>
     
