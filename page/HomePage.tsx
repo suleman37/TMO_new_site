@@ -7,6 +7,7 @@ import Hero from "@/Components/Hero/Hero";
 import Scripts from "@/Components/Scripts/Scripts";
 import Services from "@/Components/Services/Services";
 import SiteExtras from "@/Components/SiteExtras/SiteExtras";
+import Stacks from "@/Components/Stacks/Stacks";
 import Works from "@/Components/Works/Works";
 
 export default function HomePage() {
@@ -17,6 +18,7 @@ export default function HomePage() {
       <About />
       <Services />
       <Works />
+      <Stacks />
       <Clients />
       <Contact />
       <Footer />

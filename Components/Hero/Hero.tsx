@@ -1,9 +1,31 @@
 "use client";
 
+import { useEffect } from "react";
 import { useHeroParallax } from "@/Components/Hero/useHeroParallax";
 
 export default function Hero() {
   useHeroParallax();
+
+  useEffect(() => {
+    const line = document.querySelector(".home-content__line") as HTMLElement | null;
+    if (!line) return;
+
+    const onScroll = () => {
+      const scrollY = window.scrollY;
+      const maxScroll = window.innerHeight;
+      // progress goes 0 → 1 as user scrolls from 0 → viewport height
+      const progress = Math.min(scrollY / maxScroll, 1);
+      // translateY goes from -100% (hidden) to 0% (fully filled)
+      const translateY = -100 + progress * 100;
+      line.classList.add("scrolled");
+      line.style.setProperty("--scroll-progress", `${translateY}%`);
+    };
+
+    // initialise on mount
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <section
@@ -51,7 +73,7 @@ export default function Hero() {
 
       <ul className="home-social">
         <li>
-          <a href="#0">
+          <a href="https://www.facebook.com/profile.php?id=61559357555605" target="_blank" rel="noopener noreferrer">
             <i className="fa fa-facebook" aria-hidden="true" />
             <span>Facebook</span>
           </a>
@@ -63,15 +85,15 @@ export default function Hero() {
           </a>
         </li>
         <li>
-          <a href="#0">
+          <a href="https://www.instagram.com/thetechmastersofficial/" target="_blank" rel="noopener noreferrer">
             <i className="fa fa-instagram" aria-hidden="true" />
             <span>Instagram</span>
           </a>
         </li>
         <li>
-          <a href="#0">
-            <i className="fa fa-behance" aria-hidden="true" />
-            <span>Behance</span>
+          <a href="https://www.linkedin.com/company/tech-masters-official" target="_blank" rel="noopener noreferrer">
+            <i className="fa fa-linkedin" aria-hidden="true" />
+            <span>LinkedIn</span>
           </a>
         </li>
         <li>

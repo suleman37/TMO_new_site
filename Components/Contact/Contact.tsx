@@ -95,42 +95,47 @@ export default function Contact() {
     
         <div className="contact-secondary">
           <div className="contact-info">
-            <h3 className="h6 hide-on-fullwidth">Contact Info</h3>
-    
-            <div className="cinfo">
-              <h5>Where to Find Us</h5>
-              <p>
-                1600 Amphitheatre Parkway
-                <br />
-                Mountain View, CA
-                <br />
-                94043 US
+            <h3 className="h6 hide-on-fullwidth" style={{ fontSize: "2rem", fontWeight: 700, color: "#0d1b2a", marginBottom: "0.6rem" }}>
+              Contact Information
+            </h3>
+            <p style={{ color: "#6b7280", marginBottom: "2.4rem", fontSize: "1.5rem" }}>
+              Here are the ways you can reach us directly.
+            </p>
+
+            {/* Location */}
+            <div className="cinfo" style={{ marginBottom: "2rem" }}>
+              <h5 style={{ color: "#0d1b2a", fontWeight: 700, marginBottom: "0.3rem", fontSize: "1.5rem" }}>Our Location</h5>
+              <p style={{ color: "#4b5563", fontSize: "1.4rem", margin: 0 }}>Street 3, Baldia Town, Karachi, Pakistan</p>
+            </div>
+
+            {/* Email */}
+            <div className="cinfo" style={{ marginBottom: "2rem" }}>
+              <h5 style={{ color: "#0d1b2a", fontWeight: 700, marginBottom: "0.3rem", fontSize: "1.5rem" }}>Email Us</h5>
+              <p style={{ color: "#4b5563", fontSize: "1.4rem", margin: 0 }}>
+                admin@techmastersofficial.com<br />
+                techmastersofficial@gmail.com
               </p>
             </div>
-    
-            <div className="cinfo">
-              <h5>Email Us At</h5>
-              <p>
-                contact@glintsite.com
-                <br />
-                info@glintsite.com
+
+            {/* WhatsApp */}
+            <div className="cinfo" style={{ marginBottom: "2rem" }}>
+              <h5 style={{ color: "#0d1b2a", fontWeight: 700, marginBottom: "0.3rem", fontSize: "1.5rem" }}>Whatsapp</h5>
+              <p style={{ color: "#4b5563", fontSize: "1.4rem", margin: 0 }}>+92 (307) 188-1156</p>
+            </div>
+
+            {/* Business Hours */}
+            <div className="cinfo" style={{ marginBottom: "2rem" }}>
+              <h5 style={{ color: "#0d1b2a", fontWeight: 700, marginBottom: "0.3rem", fontSize: "1.5rem" }}>Business Hours</h5>
+              <p style={{ color: "#4b5563", fontSize: "1.4rem", margin: 0 }}>
+                Monday - Friday: 9:00 AM - 6:00 PM<br />
+                Saturday: 10:00 AM - 2:00 PM<br />
+                Sunday: Closed
               </p>
             </div>
-    
-            <div className="cinfo">
-              <h5>Call Us At</h5>
-              <p>
-                Phone: (+63) 555 1212
-                <br />
-                Mobile: (+63) 555 0100
-                <br />
-                Fax: (+63) 555 0101
-              </p>
-            </div>
-    
+
             <ul className="contact-social">
               <li>
-                <a href="#">
+                <a href="https://www.facebook.com/profile.php?id=61559357555605" target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-facebook" aria-hidden="true" />
                 </a>
               </li>
@@ -140,13 +145,13 @@ export default function Contact() {
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/thetechmastersofficial/" target="_blank" rel="noopener noreferrer">
                   <i className="fa fa-instagram" aria-hidden="true" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <i className="fa fa-behance" aria-hidden="true" />
+                <a href="https://www.linkedin.com/company/tech-masters-official" target="_blank" rel="noopener noreferrer">
+                  <i className="fa fa-linkedin" aria-hidden="true" />
                 </a>
               </li>
               <li>
