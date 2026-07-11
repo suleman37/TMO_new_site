@@ -3,22 +3,32 @@ export default function Footer() {
     <footer>
       <div className="row footer-main">
         <div className="col-six tab-full left footer-desc">
-          <div className="footer-logo" />
-          Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt
-          nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec,
-          egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh
-          pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor
-          accumsan tincidunt. Quaerat voluptas autem necessitatibus vitae aut.
+          <div className="footer-logo" style={{ 
+            background: "none", 
+            width: "auto", 
+            height: "auto", 
+            font: "inherit", 
+            color: "#39b54a",
+            fontSize: "2.2rem",
+            fontFamily: "'montserrat-semibold', sans-serif",
+            letterSpacing: "0.1rem",
+            marginBottom: "2rem"
+          }}>
+            Tech Masters Official
+          </div>
+          Tech Masters Official is a software house delivering cutting-edge
+          digital solutions — from AI integrations and cloud infrastructure to
+          custom web and mobile applications. We partner with businesses to
+          design, build, and scale technology that drives real results.
         </div>
-    
+
         <div className="col-six tab-full right footer-subscribe">
-          <h4>Get Notified</h4>
+          <h4>Stay Connected</h4>
           <p>
-            Quia quo qui sed odit. Quaerat voluptas autem necessitatibus vitae
-            aut non alias sed quia. Ut itaque enim optio ut excepturi deserunt
-            iusto porro.
+            Subscribe to get updates on our latest projects, tech insights,
+            and service announcements delivered straight to your inbox.
           </p>
-    
+
           <div className="subscribe-form">
             <form id="mc-form" className="group" noValidate>
               <input
@@ -35,17 +45,21 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    
+
       <div className="row footer-bottom">
         <div className="col-twelve">
           <div className="copyright">
-            <span>© Copyright Glint 2017</span>
+            <span>© Copyright Tech Masters Official {new Date().getFullYear()}</span>
             <span>
-              Site Template by{" "}
-              <a href="https://www.colorlib.com/">Colorlib</a>
+              Follow us on{" "}
+              <a href="https://www.facebook.com/profile.php?id=61559357555605" target="_blank" rel="noopener noreferrer">Facebook</a>
+              {" · "}
+              <a href="https://www.instagram.com/thetechmastersofficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              {" · "}
+              <a href="https://www.linkedin.com/company/tech-masters-official" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </span>
           </div>
-    
+
           <div className="go-top">
             <a className="smoothscroll" title="Back to Top" href="#top">
               <i className="icon-arrow-up" aria-hidden="true" />

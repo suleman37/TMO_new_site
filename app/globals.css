@@ -83,6 +83,11 @@ html.parallax-ready .s-home {
 
 .stacks-strip:first-child {
   border-bottom: none;
+  transform: rotate(-2deg);
+}
+
+.stacks-strip:last-child {
+  transform: rotate(-2deg);
 }
 
 /* The scrolling track */
