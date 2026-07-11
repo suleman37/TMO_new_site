@@ -450,6 +450,27 @@ button.btn--stroke:hover {
   color: var(--color-primary) !important;
 }
 
+/* Perfect circle client logos */
+.clients .clients__slide {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0 !important;
+  opacity: 1 !important;
+}
+
+.clients .clients__slide img {
+  width: 120px !important;
+  height: 120px !important;
+  max-width: 120px !important;
+  aspect-ratio: 1 / 1;
+  border-radius: 50% !important;
+  object-fit: cover;
+  background: #ffffff;
+  border: 1px solid var(--color-primary-20);
+  box-shadow: 0 6px 18px rgba(7, 18, 26, 0.08);
+}
+
 .clients-testimonials::before {
   background-color: var(--color-primary-20) !important;
 }

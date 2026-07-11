@@ -214,13 +214,16 @@
 
         $('.clients').slick({
             arrows: false,
-            dots: true,
+            dots: false,
             infinite: true,
             slidesToShow: 6,
-            slidesToScroll: 2,
-            //autoplay: true,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 0,
+            speed: 4000,
+            cssEase: 'linear',
+            pauseOnHover: false,
             pauseOnFocus: false,
-            autoplaySpeed: 1000,
             responsive: [
                 {
                     breakpoint: 1200,
@@ -260,7 +263,8 @@
             slidesToScroll: 1,
             adaptiveHeight: true,
             pauseOnFocus: false,
-            autoplaySpeed: 1500,
+            autoplay: true,
+            autoplaySpeed: 2000,
             responsive: [
                 {
                     breakpoint: 900,
